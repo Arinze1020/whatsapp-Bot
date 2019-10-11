@@ -10,7 +10,7 @@ def Home():
 def sms_reply():
 	msg = request.form.get("Body")
 	phone_no = request.form.get("From")
-	reply = fetch_reply(msg,phone_no)
+	reply = fetch_reply(msg, phone_no)
 	resp = MessagingResponse()
 	resp.message(reply)
 	return str(reply)
