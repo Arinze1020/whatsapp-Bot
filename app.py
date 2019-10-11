@@ -13,6 +13,6 @@ def sms_reply():
 	reply = fetch_reply(msg, phone_no)
 	resp = MessagingResponse()
 	resp.message(reply)
-	return str(reply)
+	return str(resp)
 if __name__ == '__main__':
 	app.run(debug=True)

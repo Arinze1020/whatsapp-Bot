@@ -1,9 +1,9 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "jokes-mxyafd-a0f3d296eed2.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\Users\ugwuanyi arinze\Desktop\whatsapp\phishing-detection-200912-9a24f78c0df5.json"
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "jokes-mxyafd"
+PROJECT_ID = "phishing-detection-200912"
 
 def detect_intent_from_text(text, session_id, language_code='en'):
     session = dialogflow_session_client.session_path(PROJECT_ID, session_id)
