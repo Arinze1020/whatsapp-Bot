@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\Users\ugwuanyi arinze\Desktop\whatsapp\phishing-detection-200912-9a24f78c0df5.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "phishing-detection-200912-9a24f78c0df5.json"
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
